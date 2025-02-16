@@ -1,0 +1,83 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body, header, .name, h1, .sidebar, ul {
+    margin: 0;
+}
+
+body, main {
+    height: 100vh;
+}
+
+body {
+    background: #000000;
+    color: #ffffff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.name {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: #1d1d1d;
+    padding: 10px;
+    text-align: center;
+}
+
+.sidebar {
+    width: 200px;
+    height: 100%;
+}
+
+ul {
+    padding: 0;
+}
+
+.navigationItems {
+    background: #353535;
+    padding: 18px;
+    text-align: center;
+    border: 2px solid #000000;
+    font-size: large;
+    border-radius: 0 5px 5px 0;
+
+    &:hover {    
+    background: #1d1d1d;
+    list-style-type: none;
+    padding: 18px;
+    text-align: center;
+    border: 2px solid #000000;
+    font-size: large;
+    }
+}
+
+.contact {
+    border: 2px solid #000000;
+    height: 100vh;
+    background: #353535;
+    border-radius: 0 5px 0 0;
+}
+
+.contactItems {
+    background: #353535;
+    list-style-type: circle;
+    padding: 10px;
+    text-align: left;
+    border: none;  
+}
+
+.contactItems1 {
+    background: #353535;
+    list-style-type: none;
+    padding: 10px;
+    text-align: center;
+    border: none;  
+    border-radius: 0 5px 0 0;
+    font-size: large;
+}
+
+li > a {
+    text-decoration: none;
+    color: #ffffff;
+}
