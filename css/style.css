@@ -16,6 +16,12 @@ body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+main {
+    display: flex;
+}
+
+/*Header*/
+
 .name {
     position: sticky;
     top: 0;
@@ -24,6 +30,8 @@ body {
     padding: 10px;
     text-align: center;
 }
+
+/*Sidebar*/
 
 .sidebar {
     width: 200px;
@@ -80,4 +88,44 @@ ul {
 li > a {
     text-decoration: none;
     color: #ffffff;
+}
+
+/*Main Content*/
+
+.mainContent {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 5px;
+}
+
+[class^="box"] {
+    display: grid;
+    background: #1d1d1d;
+    text-align: center;
+    padding: 10px;
+}
+
+.picture {
+    height: 300px;
+    
+}
+
+.boxPfp {
+    display: grid;
+    grid-column: 1/4;
+    justify-self: center;
+    align-self: center;
+}
+
+.projects {
+
+}
+
+.about {
+
+}
+
+.skills {
+
 }
