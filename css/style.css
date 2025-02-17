@@ -11,7 +11,7 @@ body, main {
 }
 
 body {
-    background: #000000;
+    background: #1d1d1d;
     color: #ffffff;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -22,13 +22,18 @@ main {
 
 /*Header*/
 
+header {
+    border-radius: 10px;
+}
+
 .name {
     position: sticky;
     top: 0;
     width: 100%;
-    background: #1d1d1d;
+    background: #000000;
     padding: 10px;
     text-align: center;
+    border-radius: 5px;
 }
 
 /*Sidebar*/
@@ -43,12 +48,11 @@ ul {
 }
 
 .navigationItems {
-    background: #353535;
+    background: #000000;
     padding: 18px;
     text-align: center;
     border: 2px solid #000000;
     font-size: large;
-    border-radius: 0 5px 5px 0;
 
     &:hover {    
     background: #1d1d1d;
@@ -63,12 +67,11 @@ ul {
 .contact {
     border: 2px solid #000000;
     height: 100vh;
-    background: #353535;
-    border-radius: 0 5px 0 0;
+    background: #000000;
 }
 
 .contactItems {
-    background: #353535;
+    background: #000000;
     list-style-type: circle;
     padding: 10px;
     text-align: left;
@@ -76,7 +79,7 @@ ul {
 }
 
 .contactItems1 {
-    background: #353535;
+    background: #000000;
     list-style-type: none;
     padding: 10px;
     text-align: center;
@@ -94,9 +97,10 @@ li > a {
 
 .mainContent {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 5px;
+    gap: 15px;
+    margin: 15px;
 }
 
 [class^="box"] {
@@ -104,28 +108,50 @@ li > a {
     background: #1d1d1d;
     text-align: center;
     padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #111, -5px -5px 5px #222
 }
 
 .picture {
     height: 300px;
-    
+    border-radius: 100%;
 }
 
 .boxPfp {
     display: grid;
-    grid-column: 1/4;
+    grid-column: 1;
+    grid-row: 1;
     justify-self: center;
     align-self: center;
+    border-radius: 100%;
 }
 
-.projects {
-
+.boxProjects {
+    display: grid;
+    grid-column: span 2;
 }
 
-.about {
-
+.boxProjects > h1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.skills {
+.boxAbout > h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.boxSkills > h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxCompletion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
