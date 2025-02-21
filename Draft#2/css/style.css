@@ -12,7 +12,8 @@ body {
     "header header"
     "aside main"
     "aside footer";
-    background: #333;
+    background: #191919;
+    font-family: sans-serif;
 }
 
 header {
@@ -61,15 +62,17 @@ main {
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 1vw;
+    color: white;
     margin: 3vw;
 }
 
 /*profile pic card*/
 .pfp {
+    background: #333;
     grid-area: 1 / 1 / 2 / 4;
     min-width: fit-content;
-    align-self: center;
-    padding: 5px;
+    align-content: center;
+    padding: 20px;
     border-radius: 5px;
 }
 
@@ -85,8 +88,8 @@ main {
     display: flex;
     flex-direction: column;
     grid-area: 1 / 4 / 2 / 13;
-    background: #191919;
-    color: white;
+    background: #333;
+    border-radius: 5px;
 }
 
 .cardTitle {
@@ -95,14 +98,71 @@ main {
 
 .cardImages {
     display: flex;
-    justify-content: space-evenly;
-    padding: 10% 0;
+    justify-content: space-around;
+    align-items: center;
+    background: #111;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0 5%;
+    flex-wrap: wrap;
 }
 
 .images {
     object-fit: cover;
-    width: 30%;
+    height: 150px;
+    width: 210px;
     border-radius: 5px;
+}
+
+/*About card*/
+
+.about {
+    display: flex;
+    flex-direction: column;
+    grid-area: 2 / 1 / 3 / 5;
+    background: #333;
+    border-radius: 5px;
+}
+
+.about h2 {
+    text-align: center;
+    padding: 15px;
+}
+
+.about p {
+    padding: 0 20px;
+}
+
+/*languages card*/
+
+.languages {
+    display: flex;
+    flex-direction: column;
+    grid-area: 2 / 5 / 3 / 9;
+    background: #333;
+    padding: 0 30px;
+    border-radius: 5px;
+}
+
+.languages h2 {
+    text-align: center;
+    padding: 15px;
+}
+
+/*completion card*/
+
+.completion {
+    display: flex;
+    flex-direction: column;
+    grid-area: 2 / 9 / 3 / 13;
+    background: #333;
+    padding: 0 30px;
+    border-radius: 5px;
+}
+
+.completion h2 {
+    text-align: center;
+    padding: 15px;
 }
 
 /*footer*/
